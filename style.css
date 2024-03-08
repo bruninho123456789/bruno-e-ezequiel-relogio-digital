@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(120deg, #1914AE, #191919);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.clock {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    width: 550px;
+    padding: 30px;
+}
+
+.clock .box {
+    height: 160px;
+    width: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background-color: #3C61DE;
+    box-shadow: 10px 10px 12px rgba(0, 0, 0, .9);
+    border-radius: 7px;
+    letter-spacing: 3px;
+}
+
+.clock .box.seconds {
+    background-color: #5713AD;
+}
+
+.clock span {
+    font-size: 60px;
+    font-weight: 600;
+}
+
+.clock span.time {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 500px) {
+    .clock .box {
+        height: 100px;
+        width: 95px;
+        margin-top: -15%;
+    }
+
+    .clock span {
+        font-size: 35px;
+        font-weight: 500;
+    }
+
+    .clock span.time {
+        font-size: 12px;
+    }
+
+}
